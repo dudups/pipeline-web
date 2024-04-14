@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.ezone.devops</groupId>
+    <artifactId>pipeline-web</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <parent>
+        <groupId>com.ezone.galaxy</groupId>
+        <artifactId>galaxy-framework-parent</artifactId>
+        <version>1.1.5-SNAPSHOT</version>
+    </parent>
+
+    <properties>
+        <iam_sdk_version>1.3.0-SNAPSHOT</iam_sdk_version>
+        <ezcode_sdk_version>1.1.3-SNAPSHOT</ezcode_sdk_version>
+
+        <skip_maven_deploy>true</skip_maven_deploy>
+        <skip_maven_assembly>false</skip_maven_assembly>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.ezone.galaxy</groupId>
+            <artifactId>galaxy-framework-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ezone.galaxy</groupId>
+            <artifactId>galaxy-framework-redis</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ezone.galaxy</groupId>
+            <artifactId>galaxy-framework-dao</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ezone.galaxy</groupId>
+            <artifactId>galaxy-framework-faster-dao</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ezone.galaxy</groupId>
+            <artifactId>galaxy-framework-mq</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.freemarker</groupId>
+            <artifactId>freemarker</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-compress</artifactId>
+        </dependency>
+        <!-- ezbase -->
+        <dependency>
+            <groupId>com.ezone.ezbase</groupId>
+            <artifactId>iam-center-sdk</artifactId>
+            <version>${iam_sdk_version}</version>
+        </dependency>
+        <!-- ezcode -->
+        <dependency>
+            <groupId>com.ezone.devops</groupId>
+            <artifactId>ezcode-sdk</artifactId>
+            <version>${ezcode_sdk_version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-properties</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>

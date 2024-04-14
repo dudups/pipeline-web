@@ -1,0 +1,51 @@
+{
+  "msg_type": "post",
+  "content": {
+    "post": {
+      "zh_cn": {
+        "title": "流水线任务通知",
+        "content": [
+          [
+            {
+              "tag": "text",
+              "text": "代码库："
+            },
+            {
+              "tag": "a",
+              "text": "${repoName}",
+              "href": "${homeFullAddress}/ezPipeline/records?repoName=${repoName}"
+            }
+          ],
+          [
+            {
+              "tag": "text",
+              "text": "流水线："
+            },
+            {
+              "tag": "a",
+              "text": "${pipelineName} #${buildNumber}",
+              "href": "${homeFullAddress}/ezPipeline/records/detail/${pipelineBuildId}?pipelineId=${pipelineId}&repoName=${repoName}"
+            }
+          ],
+          [
+            {
+              "tag": "text",
+              "text": "任务：${jobName} ${resultText}"
+            }
+          ],
+          [
+            {
+              "tag": "text",
+              "text": "触发人："
+            },
+            {
+              "tag": "a",
+              "text": "${nickname}",
+              "href": "${homeFullAddress}/home/${triggerUser}"
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+代码库 <a href="/ezPipeline/records?repoName=${repoName}">${repoName}</a> ${pipelineName} <a href="/ezPipeline/records/detail/${pipelineBuildId}?pipelineId=${pipelineId}&repoName=${repoName}">#${buildNumber}</a>，任务：${jobName} ${resultText}，触发人：<User>${triggerUser}</User>

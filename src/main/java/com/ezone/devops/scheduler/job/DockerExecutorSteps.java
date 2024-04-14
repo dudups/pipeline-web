@@ -1,0 +1,16 @@
+package com.ezone.devops.scheduler.job;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class DockerExecutorSteps {
+
+    private ReportUploadStep reportUploadStep;
+    private FileUploadStep fileUploadStep;
+    private DockerBuildStep dockerBuildStep;
+
+}

@@ -1,0 +1,1 @@
+代码库 [${repoName}](${homeFullAddress}/ezPipeline/records?repoName=${repoName}) [${pipelineName} #${buildNumber}](${homeFullAddress}/ezPipeline/records/detail/${pipelineBuildId}?pipelineId=${pipelineId}&repoName=${repoName})， 任务：${jobName} ${resultText}， 触发人：[${nickname}](${homeFullAddress}/home/${triggerUser})
